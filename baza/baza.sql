@@ -31,7 +31,7 @@ CREATE TABLE public.offers (
 insert into public.roles(idrole, role) values(0,'user');
 insert into public.roles(idrole, role) values(1,'admin');
 
-insert into public.users(userName,email,password,idRole) 
-values('user','user@user','$2b$10$a3s43zn.Gzolda2X0L9esuNdhXVlnTip1MShoK2xkYOx6YT5LALdi',0);
-insert into public.users(userName,email,password,idRole) 
-values('admin','admin@admin','$2b$10$OdmN/hcDoHFfWu0mM2fy9Oy4PCcoC6yNRAdwn5oejigAvLpn7xnJ6',1);
+insert into public.users(userName,email,password,telnumber,idRole) 
+values('user','user@user','$2b$10$a3s43zn.Gzolda2X0L9esuNdhXVlnTip1MShoK2xkYOx6YT5LALdi',123456789,0);
+insert into public.users(userName,email,password,telnumber,idRole) 
+values('admin','admin@admin','$2b$10$OdmN/hcDoHFfWu0mM2fy9Oy4PCcoC6yNRAdwn5oejigAvLpn7xnJ6',234567890,1);
