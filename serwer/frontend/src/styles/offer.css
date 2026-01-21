@@ -1,0 +1,132 @@
+.offer-page-container {
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+
+.offer-card-large {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .offer-card-large {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Zdjęcie */
+.offer-image-section {
+  background: #f0f0f0;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.no-photo {
+  color: #999;
+  font-size: 1.2rem;
+}
+
+/* Informacje obok zdjęcia */
+.offer-details-section {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.offer-title-large {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.offer-price-tag {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #28a745;
+  margin-bottom: 30px;
+}
+
+.currency {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Ramka kontaktu */
+.seller-contact-box {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  margin-top: auto;
+}
+
+.seller-contact-box h3 {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  color: #666;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Opis */
+.offer-description-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.offer-description-card h2 {
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.description-text {
+  line-height: 1.6;
+  white-space: pre-wrap; /* Zachowuje entery z bazy danych */
+}
+
+/* Pomocnicze */
+.loader, .error {
+  text-align: center;
+  padding: 100px;
+  font-size: 1.5rem;
+}
+
+.offer-image-section .offerImage{
+  width: 100%;
+  height: 100%;
+}
+
+.offer-image-section .offerImage img{
+  width: 100%;
+  height: auto;
+}

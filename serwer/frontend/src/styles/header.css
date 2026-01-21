@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+}
+
+.nav button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.header a{
+  text-decoration: none;
+}
+
+.hello_text  {
+    padding:5px;
+    margin:2px;
+}

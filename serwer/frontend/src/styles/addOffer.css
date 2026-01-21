@@ -1,0 +1,16 @@
+textarea:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+input[type="file"] {
+  border: 1px dashed #ddd;
+  background: #fdfdfd;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  height: 18px;
+  width: 18px;
+}

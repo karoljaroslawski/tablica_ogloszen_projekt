@@ -1,0 +1,22 @@
+services:
+    serwer:
+        container_name: "tablica_ogloszen_serwer"
+        build: ./serwer
+        ports:
+            - "5000:5000"
+        volumes:
+            - files:/app/backend/files
+    baza:
+        environment:
+            POSTGRES_USER: ouser
+            POSTGRES_PASSWORD: ouser
+            POSTGRES_DB: offerDB
+        container_name: "tablica_ogloszen_baza"
+        build: ./baza
+        ports:
+            - "5432:5432"
+        volumes:
+            - db_data:/var/lib/postgresql
+volumes:
+    db_data:
+    files:
