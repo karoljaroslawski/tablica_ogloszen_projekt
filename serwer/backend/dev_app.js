@@ -40,12 +40,6 @@ router.post("/login", async (req, res) => {
   auth.login(username, password, res);
 });
 
-router.post("/changepassword", async (req, res) => {
-  const token=req.headers.authorization;
-  const {oldPassword, newPassword} = req.body;
-  auth.changeUserPassword(token, oldPassword, newPassword, res);
-});
-
 router.get("/gethomeoffers", async (req, res) => {
   offers.getHomeOffers(res);
 });
